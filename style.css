@@ -1,0 +1,86 @@
+#mainbody{
+    border:3px solid black;
+    padding: 3px;
+    width: 350px;
+    margin: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#display{
+    border: 2px solid black;
+    height: 90px;
+    margin: 2px;
+    background-color: rgb(172, 235, 231);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 15.625% 84.375%;
+    overflow: hidden;
+}
+#col1{
+    grid-column: 1/span 2;
+}
+#display div{
+    font-size: 27px;
+    margin: 3px;
+    text-align: right;
+}
+#firstdis{
+    text-align:center !important;
+    font-weight: 900;
+ }
+#history{
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+#hisbtn{
+    background-color:black;
+    border:none;
+    font-size: 25px;
+}
+#lastval{
+    height: 50px;
+    font-size: 25px;
+    padding: 3px;
+    text-align: right;
+    overflow:hidden;
+}
+#numpad{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#numpad button{
+    font-size: 24px;
+    font-size: 900;
+    height: 60px;
+    border: none;
+}
+#numpad button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.377);
+}
+#cross{
+    display: flex;
+    color: lightseagreen;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#cross div{
+    border:2px solid lightseagreen;
+    font-size: 15px;
+    font-weight: 800;
+    width: 20px;
+}
+@media screen and (max-width: 375px) {
+    #mainbody{
+        width: 90%;
+    }
+}
