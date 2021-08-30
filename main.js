@@ -10,6 +10,7 @@ function clearnow(){
     a=0;b=0;ans=0;deci=0;
 }
 function update(str){
+    if(document.getElementById("firstdis")) clearnow();
     if(str=='.'){
         if(deci!=1) col2.innerHTML=col2.innerHTML+str;
         deci=1;return;
@@ -28,6 +29,7 @@ function update(str){
     col2.innerHTML=col2.innerHTML+str;
 }
 function backspace(){
+    if(document.getElementById("firstdis")) clearnow();
     if(col2.innerHTML=="") return;
     col2.innerHTML=col2.innerHTML.slice(0, -1);
     b=parseFloat(col2.innerHTML);
@@ -55,6 +57,7 @@ function updatehistory(k){
     localStorage.setItem("History",JSON.stringify(arr));
 }
 function operate(str){
+    if(document.getElementById("firstdis")) clearnow();
     if(b!=0) a=b;b=0;
     deci=0;cnt=0;
     col1.innerHTML=a.toString();
@@ -64,6 +67,7 @@ function operate(str){
     if(str=='/') opr.innerHTML="&#247;";
 }
 function solve(){
+    if(document.getElementById("firstdis")) clearnow();
     if(check==""){
         alert("Incomplete Operation");
         return;

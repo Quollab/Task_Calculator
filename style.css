@@ -28,6 +28,10 @@
     margin: 3px;
     text-align: right;
 }
+#firstdis{
+    text-align:center !important;
+    font-weight: 900;
+ }
 #history{
     margin: 2px;
     border: 2px solid black;
