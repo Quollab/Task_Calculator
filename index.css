@@ -1,0 +1,38 @@
+.calculator{
+    margin-left:30%;
+    background-color: #e3e5ec;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    width: 33%;
+    height: 80%;
+    text-align: center;
+}
+
+.header{
+    margin-left:40%;
+}
+.text{
+    margin-left:30%;
+}
+.btn{
+    padding: 40px 50px;
+    background-color: #e3e5ec;
+    border:#e3e5ec;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color:rgb(188, 238, 235);
+}
+
+.table{
+    margin-top: 5%;
+}
+.fas{
+    color:rgb(5, 126, 118);
+}
+.fab{
+    color:rgb(5, 126, 118);
+}
+.row1{
+    border: 1px solid black;
+}
+
